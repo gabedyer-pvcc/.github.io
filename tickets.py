@@ -1,4 +1,4 @@
-# Name: Christopher Miller
+# Name: Gabe Dyer
 # Prog Purpose: This program finds the cost of movie tickets
 # Price for one ticket: $10.99
 # Sales tax rate: 5.5%
