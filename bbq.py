@@ -1,4 +1,4 @@
-# Name: Christopher Miller, Felix Barrientos, Gabe
+# Name: Christopher Miller, Felix Barrientos, Gabe Dyer
 # Prog Purpose: Branch Barbecue Buffet
 # Price for Adults: $19.95
 # Price for children $11.95
