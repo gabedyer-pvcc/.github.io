@@ -30,7 +30,10 @@ PR_ALL = 0
 PR_CHEWS_SMALL = 9.99
 PR_CHEWS_MED = 11.99
 PR_CHEWS_LARGE = 13.99
-PR
+PR_FL = 35
+PR_FVR = 30
+PR_FRAB = 25
+PR_CHEWS_F = 8
 
 ############ define program functions ############
 def main():
@@ -83,7 +86,7 @@ def perform_dog_calculations():
     elif pet_vax == 6 :
         vax_cost = PR_RAB
     else:
-        PR_ALL = PR_BORD + PR_DAPP + PR_FLU
+        PR_ALL = PR_BORD + PR_DAPP + PR_FLU + PR_LEP + PR_LYM + PR_RAB
         vax_cost = .85 * PR_ALL
     ####### Heart worm chews
     if num_chews != 0:
@@ -93,7 +96,9 @@ def perform_dog_calculations():
             chews_cost = num_chews * PR_CHEWS_MED
         else:
             num_chews * PR_CHEWS_LARGE
-
+    else :
+        chews_cost = 0
+        
     ####Find total
     total = vax_cost + chews_cost 
     print('DOG CALCS')
@@ -103,7 +108,7 @@ def display_dog_results():
      print(line)
      print('**** PET VET ****')
      print(line)
-     print('Vaccube amounts      $ ' + format(vax_cost, '8,.2f'))
+     print('vaccines cost        $ ' + format(vax_cost, '8,.2f'))
      print('Chew amount          $ ' + format(chews_cost, '8,.2f'))
      print('Total                $ ' + format(total, '8,.2f'))
      print ('DISPLAY DOGS')
@@ -119,8 +124,32 @@ def get_cat_data():
         num_chews = int(input("how many heart work chews would you like to order?: "))
     print('CAT DATA')
 def perform_cat_calculations():
+    global vax_cost, chews_cost, total
+    if pet_vax == 1 :
+        vax_cost = PR_FL
+    elif pet_vax == 2 :
+        vax_cost = PR_FVR
+    elif pet_vax == 3 :
+        vax_cost = PR_FRAB
+    else:
+        PR_ALL = PR_FL + PR_FVR + PR_FRAB
+        vax_cost = .90 * PR_ALL
+    if num_chews != 0:
+        chews_cost = num_chews * PR_CHEWS_F
+    else:
+        chews_cost = 0 
+    total = vax_cost * chews_cost 
     print("CAT CALCS")
 def display_cat_results():
+    moneyformat = '8,.2f'
+    line = '------------------------------------'
+    print(line)
+    print('**** PET VET ****')
+    print(line)
+    print('vaccines cost        $ ' + format(vax_cost, '8,.2f'))
+    print('Chew amount          $ ' + format(chews_cost, '8,.2f'))
+    print('Total                $ ' + format(total, '8,.2f'))
+     
     print('DISPLAY CATS')
     
                         
