@@ -1,5 +1,7 @@
 # Name:  Gabe Dyer 
-# Prog Purpose: Finds cost of pet vaccines & medications for dogs and cats
+# Prog Purpose: This program demonstrated how to manipulate a list, including:
+#  finding number of items in the list, sorting the list, adding/removing items
+#  copying a list of items into another list, and changing the data in the list.
 dogs = ["Sadie",'Molly','Rlla','Milo','Buddy', 'Rocky','AnnaBelle','Gonzo','Sweetie-Pie','Diego']
 dogs2 = []
 
