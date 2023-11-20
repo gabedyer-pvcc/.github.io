@@ -1,4 +1,4 @@
-# Name: your name here
+# Name: Gabe Dyer
 # Prog Purpose: This program creates a payroll report
 
 import datetime
